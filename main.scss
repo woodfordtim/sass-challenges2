@@ -1,0 +1,22 @@
+
+$colors: #aaa, #bbb, #ccc, #ddd;
+
+@each $color in $colors {
+    $i: index($colors, $color);
+    .container-#{$i} {
+        background-color: $color;
+    }
+}
+
+
+/*this is a snippet I was imitating from the SASS documentation!
+
+$sizes: 40px, 50px, 80px;
+
+@each $size in $sizes {
+  .icon-#{$size} {
+    font-size: $size;
+    height: $size;
+    width: $size;
+  }
+}
